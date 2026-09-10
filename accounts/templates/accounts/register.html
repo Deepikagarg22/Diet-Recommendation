@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register — FitLife GYM{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="container py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="auth-card">
+                    <div class="text-center mb-4">
+                        <i class="bi bi-lightning-charge-fill
+                                  text-warning display-4"></i>
+                        <h2 class="fw-bold text-white mt-3">
+                            Join FitLife
+                        </h2>
+                        <p class="text-muted">
+                            Create your account and start your
+                            fitness journey
+                        </p>
+                    </div>
+
+                    <form method="POST" novalidate>
+                        {% csrf_token %}
+
+                        <!-- Account Information -->
+                        <h5 class="text-warning mb-3 mt-2">
+                            <i class="bi bi-person-badge me-2"></i>
+                            Account Information
+                        </h5>
+                        <hr class="border-secondary">
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    First Name *
+                                </label>
+                                {{ form.first_name }}
+                                {% if form.first_name.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.first_name.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Last Name *
+                                </label>
+                                {{ form.last_name }}
+                                {% if form.last_name.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.last_name.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Username *
+                                </label>
+                                {{ form.username }}
+                                {% if form.username.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.username.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Email *
+                                </label>
+                                {{ form.email }}
+                                {% if form.email.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.email.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Password *
+                                </label>
+                                {{ form.password1 }}
+                                {% if form.password1.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.password1.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Confirm Password *
+                                </label>
+                                {{ form.password2 }}
+                                {% if form.password2.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.password2.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Body Information -->
+                        <h5 class="text-warning mb-3 mt-4">
+                            <i class="bi bi-heart-pulse me-2"></i>
+                            Body Information
+                        </h5>
+                        <hr class="border-secondary">
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Age *
+                                </label>
+                                {{ form.age }}
+                                {% if form.age.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.age.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Gender *
+                                </label>
+                                {{ form.gender }}
+                                {% if form.gender.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.gender.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Weight (kg) *
+                                </label>
+                                {{ form.weight_kg }}
+                                {% if form.weight_kg.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.weight_kg.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Height (cm) *
+                                </label>
+                                {{ form.height_cm }}
+                                {% if form.height_cm.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.height_cm.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Activity Level *
+                                </label>
+                                {{ form.activity_level }}
+                                {% if form.activity_level.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.activity_level.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Goals -->
+                        <h5 class="text-warning mb-3 mt-4">
+                            <i class="bi bi-bullseye me-2"></i>
+                            Your Goals
+                        </h5>
+                        <hr class="border-secondary">
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Purpose *
+                                </label>
+                                {{ form.purpose }}
+                                {% if form.purpose.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.purpose.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">
+                                    Diet Preference *
+                                </label>
+                                {{ form.diet_preference }}
+                                {% if form.diet_preference.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ form.diet_preference.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        {% if form.non_field_errors %}
+                            <div class="alert alert-danger py-2 mt-2">
+                                {% for error in form.non_field_errors %}
+                                    <div>{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        <button type="submit"
+                                class="btn btn-warning w-100
+                                       fw-bold py-2 mt-3 mb-3">
+                            <i class="bi bi-rocket-takeoff me-2"></i>
+                            Create Account
+                        </button>
+
+                        <p class="text-center text-muted mb-0">
+                            Already have an account?
+                            <a href="{% url 'accounts:login' %}"
+                               class="text-warning fw-bold">
+                                Login
+                            </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

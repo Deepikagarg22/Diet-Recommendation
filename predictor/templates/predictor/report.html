@@ -1,0 +1,492 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Health Report — FitLife GYM{% endblock %}
+
+{% block content %}
+<section class="content-section">
+    <div class="container py-5 mt-5">
+
+        <!-- Report Header -->
+        <div class="text-center mb-5">
+            <h2 class="text-white fw-bold">
+                <i class="bi bi-clipboard2-pulse
+                          text-warning me-2"></i>
+                Personalized Health &amp; Nutrition Report
+            </h2>
+            
+        </div>
+
+        <!-- ═══════ USER INFO SUMMARY ═══════ -->
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="report-card">
+                    <h5 class="text-warning mb-3">
+                        <i class="bi bi-person-badge me-2"></i>
+                        Your Details
+                    </h5>
+                    <div class="row text-center">
+                        <div class="col-md-2 col-4 mb-2">
+                            <div class="text-muted small">Age</div>
+                            <div class="text-white fw-bold">
+                                {{ profile.age }} yrs
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-4 mb-2">
+                            <div class="text-muted small">
+                                Gender
+                            </div>
+                            <div class="text-white fw-bold">
+                                {{ profile.gender }}
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-4 mb-2">
+                            <div class="text-muted small">
+                                Height
+                            </div>
+                            <div class="text-white fw-bold">
+                                {{ profile.height_cm }} cm
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-4 mb-2">
+                            <div class="text-muted small">
+                                Weight
+                            </div>
+                            <div class="text-white fw-bold">
+                                {{ profile.weight_kg }} kg
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-4 mb-2">
+                            <div class="text-muted small">
+                                Activity
+                            </div>
+                            <div class="text-white fw-bold
+                                        small text-capitalize">
+                                {{ profile.get_activity_level_display }}
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-4 mb-2">
+                            <div class="text-muted small">
+                                Goal
+                            </div>
+                            <div class="text-white fw-bold
+                                        small text-capitalize">
+                                {{ profile.get_purpose_display }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════ BODY ANALYSIS ═══════ -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="report-card h-100">
+                    <h5 class="text-warning mb-3">
+                        <i class="bi bi-heart-pulse me-2"></i>
+                        Body Analysis
+                    </h5>
+                    <table class="table table-dark
+                                  table-borderless mb-0">
+                        <tr>
+                            <td class="text-muted">
+                                📊 Current BMI
+                            </td>
+                            <td class="text-white fw-bold">
+                                {{ result.bmi }}
+                                <span class="badge
+                                    {% if result.bmi_category == 'Normal' %}
+                                        bg-success
+                                    {% elif result.bmi_category == 'Overweight' %}
+                                        bg-warning text-dark
+                                    {% elif result.bmi_category == 'Underweight' %}
+                                        bg-info
+                                    {% else %}
+                                        bg-danger
+                                    {% endif %}
+                                    ms-2">
+                                    {{ result.bmi_category }}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">
+                                🎯 Target BMI
+                            </td>
+                            <td class="text-white fw-bold">
+                                {{ result.target_bmi }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">
+                                🔥 Body Fat
+                            </td>
+                            <td class="text-white fw-bold">
+                                {{ result.body_fat_pct }}%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">
+                                💪 Lean Body Mass
+                            </td>
+                            <td class="text-white fw-bold">
+                                {{ result.lean_body_mass }} kg
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">
+                                🏋 Ideal Weight
+                            </td>
+                            <td class="text-white fw-bold">
+                                {{ result.ideal_weight }} kg
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="report-card h-100">
+                    <h5 class="text-warning mb-3">
+                        <i class="bi bi-graph-up me-2"></i>
+                        Weight Goal
+                    </h5>
+                    <table class="table table-dark
+                                  table-borderless mb-0">
+                        <tr>
+                            <td class="text-muted">
+                                📐 Target Weight
+                            </td>
+                            <td class="text-white fw-bold">
+                                {{ result.target_weight }} kg
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">
+                                📈 Change Needed
+                            </td>
+                            <td class="fw-bold
+                                {% if result.weight_change > 0 %}
+                                    text-success
+                                {% elif result.weight_change < 0 %}
+                                    text-danger
+                                {% else %}
+                                    text-info
+                                {% endif %}
+                            ">
+                                {% if result.weight_change > 0 %}+{% endif %}{{ result.weight_change }} kg
+                                ({{ result.weight_direction }})
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">
+                                📅 Est. Timeline
+                            </td>
+                            <td class="text-white fw-bold">
+                                {% if result.weeks_to_goal > 0 %}
+                                    {{ result.weeks_to_goal }} weeks
+                                {% else %}
+                                    You're on target! 🎉
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Progress Bar Visual -->
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between
+                                    small text-muted mb-1">
+                            <span>
+                                Current: {{ profile.weight_kg }} kg
+                            </span>
+                            <span>
+                                Target: {{ result.target_weight }} kg
+                            </span>
+                        </div>
+                        <div class="progress"
+                             style="height: 10px;">
+                            {% if result.weight_change >= 0 %}
+                            <div class="progress-bar bg-warning"
+                                 style="width: {% widthratio profile.weight_kg result.target_weight 100 %}%">
+                            </div>
+                            {% else %}
+                            <div class="progress-bar bg-success"
+                                 style="width: {% widthratio result.target_weight profile.weight_kg 100 %}%">
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════ ML PREDICTIONS ═══════ -->
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="report-card">
+                    <h5 class="text-warning mb-3">
+                        <i class="bi bi-cpu me-2"></i>
+                        Predicted Daily Nutrition
+                        
+                    </h5>
+
+                    <div class="row text-center g-3">
+                        <div class="col-md-3 col-6">
+                            <div class="nutrition-stat calories">
+                                <i class="bi bi-fire
+                                          fs-2 text-warning"></i>
+                                <h3 class="text-white fw-bold mt-2">
+                                    {{ result.calories }}
+                                </h3>
+                                <p class="text-muted mb-0">
+                                    Calories (kcal)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="nutrition-stat protein">
+                                <i class="bi bi-egg
+                                          fs-2 text-danger"></i>
+                                <h3 class="text-white fw-bold mt-2">
+                                    {{ result.protein }}g
+                                </h3>
+                                <p class="text-muted mb-0">
+                                    Protein
+                                    ({{ result.protein_pct }}%)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="nutrition-stat carbs">
+                                <i class="bi bi-basket
+                                          fs-2 text-info"></i>
+                                <h3 class="text-white fw-bold mt-2">
+                                    {{ result.carbs }}g
+                                </h3>
+                                <p class="text-muted mb-0">
+                                    Carbs
+                                    ({{ result.carbs_pct }}%)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="nutrition-stat fat">
+                                <i class="bi bi-droplet
+                                          fs-2 text-success"></i>
+                                <h3 class="text-white fw-bold mt-2">
+                                    {{ result.fat }}g
+                                </h3>
+                                <p class="text-muted mb-0">
+                                    Fat
+                                    ({{ result.fat_pct }}%)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-secondary my-4">
+
+                    <div class="row text-center">
+                        <div class="col-md-3 col-6 mb-2">
+                            <span class="text-muted">🔥 BMR</span>
+                            <div class="text-white fw-bold">
+                                {{ result.bmr }} kcal
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-2">
+                            <span class="text-muted">⚡ TDEE</span>
+                            <div class="text-white fw-bold">
+                                {{ result.tdee }} kcal
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-2">
+                            <span class="text-muted">
+                                💧 Water
+                            </span>
+                            <div class="text-white fw-bold">
+                                {{ result.water_liters }}L
+                                ({{ result.water_ml }} ml)
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mb-2">
+                            <span class="text-muted">
+                                🌾 Fiber
+                            </span>
+                            <div class="text-white fw-bold">
+                                {{ result.fiber }}g
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════ DIET PLANS ═══════ -->
+        {% for diet_type, diet_data in result.diet_plans.items %}
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="report-card">
+                    <h5 class="text-warning mb-4">
+                        {% if diet_type == 'vegetarian' %}
+                            <i class="bi bi-leaf me-2
+                                      text-success"></i>
+                            🥬 Vegetarian Diet Plan
+                        {% else %}
+                            <i class="bi bi-egg-fried me-2
+                                      text-warning"></i>
+                            🍗 Non-Vegetarian Diet Plan
+                        {% endif %}
+                        <span class="badge bg-info ms-2">
+                            {{ diet_data.accuracy }}% match
+                        </span>
+                    </h5>
+
+                    <div class="row g-3">
+                        {% for meal_name, meal_info in diet_data.plan.items %}
+                        <div class="col-md-6 col-lg-3">
+                            <div class="meal-card">
+                                <div class="meal-header">
+                                    {% if meal_name == 'breakfast' %}
+                                        <span class="meal-icon">
+                                            🌅
+                                        </span>
+                                    {% elif meal_name == 'lunch' %}
+                                        <span class="meal-icon">
+                                            ☀️
+                                        </span>
+                                    {% elif meal_name == 'snacks' %}
+                                        <span class="meal-icon">
+                                            🍪
+                                        </span>
+                                    {% elif meal_name == 'dinner' %}
+                                        <span class="meal-icon">
+                                            🌙
+                                        </span>
+                                    {% endif %}
+                                    <span class="text-capitalize
+                                                 fw-bold
+                                                 text-white">
+                                        {{ meal_name }}
+                                    </span>
+                                    <span class="text-muted small">
+                                        ({{ meal_info.target }} cal
+                                        target)
+                                    </span>
+                                </div>
+
+                                <div class="meal-body">
+                                    <h6 class="text-warning mb-2">
+                                        {{ meal_info.food }}
+                                    </h6>
+                                    {% if meal_info.note %}
+                                        <span class="badge bg-info
+                                                     mb-2 small">
+                                            {{ meal_info.note }}
+                                        </span>
+                                    {% endif %}
+
+                                    <div class="meal-macros">
+                                        <div class="macro-item">
+                                            <span class="text-muted">
+                                                Cal
+                                            </span>
+                                            <span class="text-white
+                                                         fw-bold">
+                                                {{ meal_info.calories }}
+                                            </span>
+                                        </div>
+                                        <div class="macro-item">
+                                            <span class="text-muted">
+                                                P
+                                            </span>
+                                            <span class="text-danger
+                                                         fw-bold">
+                                                {{ meal_info.protein }}g
+                                            </span>
+                                        </div>
+                                        <div class="macro-item">
+                                            <span class="text-muted">
+                                                C
+                                            </span>
+                                            <span class="text-info
+                                                         fw-bold">
+                                                {{ meal_info.carbs }}g
+                                            </span>
+                                        </div>
+                                        <div class="macro-item">
+                                            <span class="text-muted">
+                                                F
+                                            </span>
+                                            <span class="text-success
+                                                         fw-bold">
+                                                {{ meal_info.fat }}g
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Diet Totals -->
+                    <div class="diet-totals mt-4">
+                        <div class="row text-center">
+                            <div class="col-3">
+                                <div class="text-muted small">
+                                    Total Calories
+                                </div>
+                                <div class="text-white fw-bold">
+                                    {{ diet_data.totals.calories }}
+                                    kcal
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="text-muted small">
+                                    Total Protein
+                                </div>
+                                <div class="text-danger fw-bold">
+                                    {{ diet_data.totals.protein }}g
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="text-muted small">
+                                    Total Carbs
+                                </div>
+                                <div class="text-info fw-bold">
+                                    {{ diet_data.totals.carbs }}g
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="text-muted small">
+                                    Total Fat
+                                </div>
+                                <div class="text-success fw-bold">
+                                    {{ diet_data.totals.fat }}g
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Action Buttons -->
+        <div class="text-center mt-4">
+            <a href="{% url 'predictor:dashboard' %}"
+               class="btn btn-outline-light px-4 py-2 me-3">
+                <i class="bi bi-arrow-left me-2"></i>
+                Back to Dashboard
+            </a>
+            <a href="{% url 'accounts:profile' %}"
+               class="btn btn-warning px-4 py-2">
+                <i class="bi bi-pencil me-2"></i>
+                Update Profile &amp; Regenerate
+            </a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

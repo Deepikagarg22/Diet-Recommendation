@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Dashboard — FitLife GYM{% endblock %}
+
+{% block content %}
+<section class="content-section">
+    <div class="container py-5 mt-5">
+
+        <!-- Welcome Header -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-white fw-bold">
+                    <i class="bi bi-lightning-charge-fill
+                              text-warning me-2"></i>
+                    Welcome, {{ user.first_name }}!
+                </h2>
+                <p class="text-muted">
+                    Your personalized fitness dashboard
+                </p>
+            </div>
+        </div>
+
+        {% if not is_complete %}
+        <!-- Incomplete Profile Alert -->
+        <div class="alert alert-warning d-flex
+                    align-items-center" role="alert">
+            <i class="bi bi-exclamation-triangle-fill
+                      me-3 fs-4"></i>
+            <div>
+                <strong>Profile Incomplete!</strong>
+                Please complete your profile to generate
+                your personalized health report.
+                <a href="{% url 'accounts:profile' %}"
+                   class="alert-link ms-2">
+                    Complete Profile →
+                </a>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="row g-4">
+
+            {% if is_complete %}
+            <!-- Quick Stats -->
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-speedometer
+                              text-info fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold">
+                        {{ bmi }}
+                    </h3>
+                    <p class="text-muted mb-1">Current BMI</p>
+                    <span class="badge
+                        {% if bmi_category == 'Normal' %}
+                            bg-success
+                        {% elif bmi_category == 'Overweight' %}
+                            bg-warning text-dark
+                        {% elif bmi_category == 'Underweight' %}
+                            bg-info
+                        {% else %}
+                            bg-danger
+                        {% endif %}
+                    ">
+                        {{ bmi_category }}
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-bullseye
+                              text-success fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold">
+                        {{ profile.weight_kg }} kg
+                    </h3>
+                    <p class="text-muted mb-1">
+                        Current Weight
+                    </p>
+                    <span class="badge bg-secondary">
+                        {{ profile.height_cm }} cm tall
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-bullseye
+                              text-success fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold
+                               text-capitalize">
+                        {{ profile.get_purpose_display }}
+                    </h3>
+                    <p class="text-muted mb-1">Your Goal</p>
+                    <span class="badge bg-secondary
+                                 text-capitalize">
+                        {{ profile.get_activity_level_display }}
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-egg-fried
+                              text-danger fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold
+                               text-capitalize">
+                        {{ profile.get_diet_preference_display }}
+                    </h3>
+                    <p class="text-muted mb-1">
+                        Diet Preference
+                    </p>
+                    <span class="badge bg-secondary">
+                        {{ profile.get_gender_display }},
+                        {{ profile.age }}y
+                    </span>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Action Cards -->
+            <div class="col-md-6">
+                <div class="dashboard-card action-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-clipboard2-pulse
+                                  text-warning fs-2 me-3"></i>
+                        <div>
+                            <h4 class="text-white mb-1">
+                                Generate Health Report
+                            </h4>
+                            <p class="text-muted mb-0">
+                                Get calories, macros
+                                & personalized diet plans
+                            </p>
+                        </div>
+                    </div>
+                    <a href="{% url 'predictor:report' %}"
+                       class="btn btn-warning fw-bold px-4
+                              {% if not is_complete %}disabled{% endif %}">
+                        <i class="bi bi-cpu me-2"></i>
+                        Generate Report
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="dashboard-card action-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-person-gear
+                                  text-info fs-2 me-3"></i>
+                        <div>
+                            <h4 class="text-white mb-1">
+                                Update Profile
+                            </h4>
+                            <p class="text-muted mb-0">
+                                Update your weight, goals,
+                                or preferences anytime
+                            </p>
+                        </div>
+                    </div>
+                    <a href="{% url 'accounts:profile' %}"
+                       class="btn btn-outline-info fw-bold px-4">
+                        <i class="bi bi-pencil me-2"></i>
+                        Edit Profile
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,437 @@
+food,meal,diet,calories,protein,carbs,fat,fiber
+Idli (3 pcs) + Sambar + Coconut Chutney,breakfast,vegetarian,310,10,58,5,4
+Masala Dosa + Coconut Chutney,breakfast,vegetarian,380,8,55,14,3
+Plain Dosa (2) + Sambar,breakfast,vegetarian,320,9,52,8,3
+Rava Dosa (2) + Chutney,breakfast,vegetarian,350,7,48,14,2
+Set Dosa (3) + Chutney Podi,breakfast,vegetarian,330,8,56,8,3
+Uttapam (2) + Sambar,breakfast,vegetarian,360,10,58,9,4
+Onion Uttapam (2) + Coconut Chutney,breakfast,vegetarian,370,9,56,11,4
+Medu Vada (3) + Sambar + Chutney,breakfast,vegetarian,400,14,42,20,5
+Pesarattu (2) + Ginger Chutney,breakfast,vegetarian,280,16,38,6,6
+Appam (2) + Vegetable Stew,breakfast,vegetarian,340,8,52,10,3
+Idiyappam (3) + Coconut Milk,breakfast,vegetarian,350,7,60,9,2
+Pongal + Sambar + Chutney,breakfast,vegetarian,380,12,56,12,4
+Rava Idli (3) + Chutney,breakfast,vegetarian,290,8,50,6,3
+Neer Dosa (3) + Coconut Chutney,breakfast,vegetarian,260,5,48,5,2
+Puttu + Kadala Curry (Kerala),breakfast,vegetarian,390,14,62,9,7
+Ragi Mudde + Sambar,breakfast,vegetarian,300,8,60,3,6
+Kanchipuram Idli (3) + Chutney,breakfast,vegetarian,330,10,55,7,4
+Aloo Paratha (2) + Dahi + Pickle,breakfast,vegetarian,450,12,56,20,4
+Paneer Paratha (2) + Butter + Curd,breakfast,vegetarian,480,20,48,24,3
+Gobi Paratha (2) + Pickle + Lassi,breakfast,vegetarian,430,11,54,18,4
+Mooli Paratha (2) + White Butter + Curd,breakfast,vegetarian,420,10,52,18,4
+Methi Paratha (2) + Curd,breakfast,vegetarian,400,12,50,16,5
+Sattu Paratha (2) + Chutney,breakfast,vegetarian,410,16,52,14,5
+Chole Bhature (2 Bhature),breakfast,vegetarian,550,18,64,24,6
+Poori (4) + Aloo Sabzi,breakfast,vegetarian,480,12,62,20,4
+Bedmi Poori (2) + Aloo Sabzi,breakfast,vegetarian,520,14,58,26,5
+Stuffed Kulcha (2) + Chole,breakfast,vegetarian,540,18,62,24,5
+Aaloo Puri + Halwa (Navratri style),breakfast,vegetarian,500,10,68,22,3
+Missi Roti (3) + Dahi,breakfast,vegetarian,380,16,52,10,6
+Makki ki Roti (2) + Sarson ka Saag,breakfast,vegetarian,370,10,52,14,6
+Poha + Sev + Lemon (Indori),breakfast,vegetarian,300,7,50,8,3
+Kanda Poha + Chai,breakfast,vegetarian,285,7,48,8,3
+Upma + Coconut Chutney,breakfast,vegetarian,280,8,46,7,4
+Rava Upma + Lemon + Peanuts,breakfast,vegetarian,300,9,44,10,3
+Dhokla (6 pcs) + Green Chutney,breakfast,vegetarian,270,10,42,6,3
+Khandvi (6 pcs) + Tadka,breakfast,vegetarian,220,9,30,7,2
+Thepla (3) + Dahi + Pickle,breakfast,vegetarian,370,12,48,14,4
+Methi Thepla (3) + Aam Ras,breakfast,vegetarian,420,11,58,14,5
+Misal Pav (Maharashtrian),breakfast,vegetarian,450,18,56,16,8
+Sabudana Khichdi + Peanuts,breakfast,vegetarian,350,6,58,11,2
+Thalipeeth (2) + White Butter,breakfast,vegetarian,360,12,46,14,5
+Batata Vada (2) + Pav + Chutney,breakfast,vegetarian,420,10,56,18,3
+Dabeli (2),breakfast,vegetarian,380,8,52,14,3
+Luchi (4) + Cholar Dal,breakfast,vegetarian,470,14,60,20,5
+Radhaballabhi (2) + Cholar Dal,breakfast,vegetarian,440,14,52,20,5
+Oatmeal + Banana + Honey + Almonds,breakfast,vegetarian,340,10,58,8,6
+Overnight Oats + Chia + Mixed Fruits,breakfast,vegetarian,320,12,50,9,7
+Moong Dal Chilla (2) + Green Chutney,breakfast,vegetarian,260,16,32,7,5
+Besan Chilla (2) + Mint Chutney,breakfast,vegetarian,250,14,28,9,4
+Ragi Porridge + Jaggery + Nuts,breakfast,vegetarian,310,10,52,7,6
+Ragi Dosa (2) + Chutney,breakfast,vegetarian,280,8,48,6,5
+Jowar Flakes + Milk + Banana,breakfast,vegetarian,300,10,52,6,5
+Bajra Khichdi + Buttermilk,breakfast,vegetarian,320,10,50,8,5
+Multigrain Toast (2) + PB + Banana,breakfast,vegetarian,380,14,50,16,5
+Muesli + Curd + Mixed Fruits + Honey,breakfast,vegetarian,400,14,62,12,5
+Smoothie Bowl (Mango Banana Oats),breakfast,vegetarian,340,10,60,7,4
+Sprouts Poha + Lemon,breakfast,vegetarian,260,12,40,5,6
+Sattu Drink + Banana + Almonds,breakfast,vegetarian,310,16,44,8,5
+Paneer Bhurji + 2 Multigrain Roti,breakfast,vegetarian,440,24,40,22,4
+Dalia (Broken Wheat) Porridge + Milk,breakfast,vegetarian,280,10,48,5,6
+Savoury Semolina Porridge + Veggies,breakfast,vegetarian,270,8,42,8,3
+Chana Sundal + Bread Toast (2),breakfast,vegetarian,300,14,42,7,7
+Green Moong Sprouts + Poha Mix,breakfast,vegetarian,250,14,36,5,6
+Mixed Dal Dosa (2) + Tomato Chutney,breakfast,vegetarian,300,12,46,7,4
+Wheat Flakes + Warm Milk + Dates,breakfast,vegetarian,330,10,56,7,4
+Suji Cheela (2) + Mint Chutney,breakfast,vegetarian,260,8,40,7,2
+Bajra Roti (2) + Jaggery + Ghee,breakfast,vegetarian,380,8,56,14,5
+Nachni Satva (Ragi) + Milk + Sugar,breakfast,vegetarian,290,8,52,5,4
+Vegetable Sandwich (Grilled) + Chutney,breakfast,vegetarian,300,10,40,11,4
+Egg Bhurji + 2 Wheat Roti,breakfast,non_vegetarian,400,22,38,18,3
+Anda Paratha (2) + Pickle + Chai,breakfast,non_vegetarian,460,20,50,20,3
+Egg Omelette (3 eggs) + Toast (2),breakfast,non_vegetarian,420,26,30,22,2
+Boiled Eggs (4) + Brown Bread (2),breakfast,non_vegetarian,400,30,28,18,3
+Egg Dosa (2) + Chutney,breakfast,non_vegetarian,380,18,46,14,3
+Keema Paratha (2) + Raita,breakfast,non_vegetarian,500,28,46,22,3
+Chicken Keema Paratha (2) + Curd,breakfast,non_vegetarian,510,30,44,24,3
+Egg Appam (2) + Stew,breakfast,non_vegetarian,370,16,46,14,2
+Malabar Egg Curry + Parotta (2),breakfast,non_vegetarian,520,20,56,24,2
+Egg Uttapam (2) + Sambar,breakfast,non_vegetarian,400,18,52,14,3
+Chicken Sandwich (Grilled) + Salad,breakfast,non_vegetarian,430,32,38,16,4
+Egg Roll (Kathi Roll),breakfast,non_vegetarian,380,18,40,16,2
+Egg Fried Rice (Leftover Rice),breakfast,non_vegetarian,400,16,56,12,2
+Whey Protein Shake + Banana + Oats,breakfast,non_vegetarian,380,35,48,6,4
+Chicken Poha (Non-veg Poha),breakfast,non_vegetarian,380,22,46,12,3
+Egg White Omelette (4 whites) + Toast,breakfast,non_vegetarian,280,24,30,6,2
+Smoked Salmon + Roti (2),breakfast,non_vegetarian,400,30,36,16,2
+Mutton Keema + Pav (2),breakfast,non_vegetarian,520,32,40,26,2
+Egg Idli (3) + Sambar,breakfast,non_vegetarian,360,18,50,10,3
+Chicken Sausage (3) + Eggs (2) Scrambled,breakfast,non_vegetarian,440,34,8,30,0
+Fish Cutlet (2) + Bread (2),breakfast,non_vegetarian,420,24,42,18,2
+Egg Maggi (Masala Maggi + 2 Eggs),breakfast,non_vegetarian,450,20,52,18,2
+Boiled Egg (2) + Upma,breakfast,non_vegetarian,340,18,42,10,3
+Prawn Poha,breakfast,non_vegetarian,360,20,48,10,3
+Egg Wrap + Veggies + Chutney,breakfast,non_vegetarian,350,18,36,14,3
+Duck Egg Omelette + Paratha,breakfast,non_vegetarian,480,24,40,26,2
+Chicken Upma (South Indian Style),breakfast,non_vegetarian,380,24,40,14,3
+Egg Pesarattu (Andhra),breakfast,non_vegetarian,320,20,36,10,5
+Turkey Keema + Brown Bread Toast (2),breakfast,non_vegetarian,370,30,32,14,3
+Egg Masala + Appam (2),breakfast,non_vegetarian,420,18,52,16,2
+Boiled Egg Salad Bowl + Quinoa,breakfast,non_vegetarian,350,24,36,12,5
+Egg Frankie (Mumbai Style),breakfast,non_vegetarian,400,18,44,16,2
+Kerala Egg Roast + Puttu,breakfast,non_vegetarian,440,20,56,16,3
+Chicken Momos (Steamed 6 pcs) + Broth,breakfast,non_vegetarian,340,22,38,10,2
+Kheema Pav (Mutton),breakfast,non_vegetarian,540,30,44,28,2
+Fish Fry (2 pcs) + Bread,breakfast,non_vegetarian,440,28,34,22,1
+Chicken Stuffed Paratha (2),breakfast,non_vegetarian,490,28,46,22,3
+Egg Pongal (South Indian),breakfast,non_vegetarian,400,18,52,14,3
+Nargisi Kofta + Roti (2),breakfast,non_vegetarian,520,26,42,28,2
+Scrambled Eggs + Avocado + Roti,breakfast,non_vegetarian,420,20,34,24,5
+Dal Tadka + Jeera Rice + Aloo Gobi,lunch,vegetarian,540,18,82,14,8
+Rajma + Steamed Rice + Salad,lunch,vegetarian,520,22,78,12,12
+Chole + 2 Roti + Onion Salad,lunch,vegetarian,510,20,66,16,10
+Paneer Butter Masala + Jeera Rice,lunch,vegetarian,620,24,72,26,4
+Dal Makhani + Butter Naan (2),lunch,vegetarian,650,22,74,30,6
+Kadhi Pakora + Steamed Rice + Papad,lunch,vegetarian,500,14,70,18,4
+Shahi Paneer + 2 Tandoori Roti,lunch,vegetarian,560,26,48,30,3
+Mixed Dal + Rice + Bhindi Fry,lunch,vegetarian,480,20,70,12,10
+Palak Paneer + 2 Phulka + Salad,lunch,vegetarian,540,24,50,26,7
+Aloo Matar + 2 Roti + Raita,lunch,vegetarian,460,14,62,16,5
+Malai Kofta + Naan (2),lunch,vegetarian,640,18,68,34,3
+Chana Masala + Brown Rice + Salad,lunch,vegetarian,490,20,72,12,11
+Baingan Bharta + 2 Bajra Roti + Dahi,lunch,vegetarian,420,12,56,16,7
+Aloo Gobhi + 2 Roti + Dal,lunch,vegetarian,470,16,64,14,6
+Paneer Tikka Masala + Rice,lunch,vegetarian,580,26,66,24,4
+Matar Paneer + 2 Roti + Pickle,lunch,vegetarian,520,22,52,24,5
+Lauki Kofta + Steamed Rice,lunch,vegetarian,480,14,68,16,4
+Tinda Masala + Dal + 2 Roti,lunch,vegetarian,440,16,60,14,6
+Mix Veg Curry + 3 Phulka + Raita,lunch,vegetarian,500,16,68,16,8
+Dum Aloo + 2 Laccha Paratha,lunch,vegetarian,580,12,66,30,4
+Sambar Rice + Poriyal + Papad,lunch,vegetarian,510,16,80,12,8
+Rasam Rice + Beans Poriyal + Curd,lunch,vegetarian,440,12,72,10,5
+Bisi Bele Bath + Boondi Raita,lunch,vegetarian,520,16,76,16,6
+Curd Rice + Pickle + Papad,lunch,vegetarian,380,10,62,10,2
+Lemon Rice + Sambar + Poriyal,lunch,vegetarian,460,12,74,12,5
+Tomato Rice + Raita + Appalam,lunch,vegetarian,440,10,70,12,3
+Puliyodarai (Tamarind Rice) + Vadai,lunch,vegetarian,500,14,72,18,4
+Vangi Bath (Brinjal Rice) + Raita,lunch,vegetarian,480,12,70,16,5
+Avial + Rice + Sambar + Papad,lunch,vegetarian,520,14,74,18,7
+Kerala Sadya Meal (Rice+Sambar+Avial+Pachadi),lunch,vegetarian,600,16,88,20,8
+Andhra Pappu + Rice + Gongura Pachadi,lunch,vegetarian,470,18,68,12,6
+Kootu Curry + Rice + Buttermilk,lunch,vegetarian,450,16,66,12,7
+Veg Biryani + Raita + Salad,lunch,vegetarian,530,14,78,18,5
+Vegetable Pulao + Dal Fry + Papad,lunch,vegetarian,510,16,76,14,6
+Paneer Biryani + Mirchi Salan,lunch,vegetarian,600,24,72,24,4
+Mushroom Biryani + Raita,lunch,vegetarian,500,16,74,16,5
+Soya Chunk Biryani + Raita,lunch,vegetarian,520,26,70,14,5
+Gujarati Thali (Dal+Roti+Rice+Sabzi+Buttermilk),lunch,vegetarian,560,18,80,18,7
+Undhiyu + Puri (3) + Shrikhand,lunch,vegetarian,620,16,78,28,8
+Puran Poli (2) + Amti + Rice,lunch,vegetarian,550,14,82,18,5
+Zunka Bhakar + Thecha + Onion,lunch,vegetarian,400,14,58,12,7
+Pav Bhaji (3 Pav),lunch,vegetarian,550,16,72,22,6
+Varan Bhat (Dal Rice Maharashtrian),lunch,vegetarian,430,16,68,10,5
+Moong Dal + Rice + Begun Bhaja + Papad,lunch,vegetarian,480,16,72,14,5
+Shukto + Rice + Dal + Bhaja,lunch,vegetarian,500,14,74,16,6
+Cholar Dal + Luchi (3),lunch,vegetarian,520,16,68,22,5
+Aloo Posto + Rice + Dal,lunch,vegetarian,480,14,70,16,4
+Tofu Stir Fry + Quinoa + Salad,lunch,vegetarian,440,24,48,16,7
+Stuffed Capsicum + Brown Rice + Curd,lunch,vegetarian,450,14,64,14,5
+Mushroom Matar + 2 Roti + Raita,lunch,vegetarian,490,18,58,20,6
+Soya Chunk Curry + Rice + Salad,lunch,vegetarian,500,28,64,14,6
+Sprouts Curry + Brown Rice + Buttermilk,lunch,vegetarian,450,22,62,10,8
+Quinoa Pulao + Dal + Salad,lunch,vegetarian,430,18,56,12,7
+Buddha Bowl (Quinoa+Chickpeas+Veggies+Tahini),lunch,vegetarian,480,20,56,18,9
+Millet Khichdi + Kadhi + Salad,lunch,vegetarian,430,16,60,12,7
+Bajra Roti (2) + Ringan nu Shak + Dahi,lunch,vegetarian,400,12,54,14,6
+Jowar Roti (2) + Pitla + Koshimbir,lunch,vegetarian,380,14,56,10,7
+Ragi Mudde + Bassaru + Salad,lunch,vegetarian,390,12,64,6,8
+Sattu Paratha (2) + Baingan Chokha + Dahi,lunch,vegetarian,450,18,58,14,6
+Masoor Dal + Rice + Lauki Sabzi,lunch,vegetarian,440,18,66,10,6
+Green Peas Paratha (2) + Raita + Pickle,lunch,vegetarian,460,16,58,16,6
+Toor Dal + Rice + Cabbage Poriyal + Appalam,lunch,vegetarian,470,16,72,12,6
+Moong Sprouts Sabzi + 2 Roti + Dal,lunch,vegetarian,440,22,58,12,8
+Palak Chole + Jeera Rice + Raita,lunch,vegetarian,520,22,72,14,9
+Chicken Curry + Steamed Rice + Salad,lunch,non_vegetarian,580,36,68,16,4
+Grilled Chicken Breast (200g) + Salad + Rice,lunch,non_vegetarian,480,46,40,12,5
+Chicken Biryani + Raita + Salad,lunch,non_vegetarian,650,34,82,20,3
+Butter Chicken + Naan (2),lunch,non_vegetarian,700,38,62,32,2
+Tandoori Chicken (Half) + Dal + Rice,lunch,non_vegetarian,610,42,66,18,5
+Chicken Tikka Masala + 2 Roti,lunch,non_vegetarian,560,38,46,24,3
+Kadhai Chicken + 2 Roti + Onion Salad,lunch,non_vegetarian,550,36,44,24,3
+Chicken Do Pyaza + Jeera Rice,lunch,non_vegetarian,580,34,68,18,4
+Chicken Korma + Steamed Rice,lunch,non_vegetarian,600,32,70,22,3
+Chicken Chettinad + Rice + Rasam,lunch,non_vegetarian,570,36,66,18,4
+Chicken Saagwala + 2 Roti,lunch,non_vegetarian,520,38,42,22,5
+Mutton Rogan Josh + 2 Roti + Salad,lunch,non_vegetarian,620,36,42,32,3
+Mutton Biryani + Raita,lunch,non_vegetarian,700,36,80,26,3
+Mutton Curry + Steamed Rice,lunch,non_vegetarian,640,34,68,24,3
+Lamb Keema + 2 Roti + Onion,lunch,non_vegetarian,580,36,42,28,3
+Mutton Korma + Sheermal (2),lunch,non_vegetarian,680,34,58,34,2
+Nihari (Mutton) + 2 Naan,lunch,non_vegetarian,720,38,60,36,2
+Haleem (Mutton) + Naan,lunch,non_vegetarian,600,34,56,26,5
+Fish Curry (Pomfret) + Rice + Sabzi,lunch,non_vegetarian,530,32,65,14,4
+Grilled Fish (200g) + Brown Rice + Salad,lunch,non_vegetarian,460,40,42,14,5
+Prawn Masala + Steamed Rice,lunch,non_vegetarian,520,30,64,16,3
+Fish Biryani + Raita,lunch,non_vegetarian,580,32,76,18,3
+Goan Fish Curry + Rice,lunch,non_vegetarian,540,34,62,16,3
+Kerala Fish Molee + Appam (2),lunch,non_vegetarian,520,30,56,18,2
+Bengali Fish Curry (Maach) + Rice,lunch,non_vegetarian,530,30,68,14,3
+Prawn Biryani + Mirchi Salan,lunch,non_vegetarian,580,28,78,18,3
+Crab Masala + Rice + Salad,lunch,non_vegetarian,520,28,62,18,4
+Grilled Salmon Tikka + Quinoa + Veggies,lunch,non_vegetarian,500,42,40,20,5
+Tuna Salad Bowl + Brown Rice,lunch,non_vegetarian,460,38,48,14,5
+Fish Fry (2 pcs) + Dal + Rice,lunch,non_vegetarian,560,30,66,20,4
+Egg Curry (3 eggs) + 2 Roti + Salad,lunch,non_vegetarian,500,24,48,22,4
+Egg Biryani + Raita,lunch,non_vegetarian,540,22,74,18,3
+Egg Masala + Rice + Papad,lunch,non_vegetarian,500,20,68,16,3
+Egg Fried Rice + Manchurian,lunch,non_vegetarian,550,20,72,20,3
+Hyderabadi Chicken Dum Biryani + Raita,lunch,non_vegetarian,680,36,82,22,3
+Lucknowi Chicken Biryani + Raita,lunch,non_vegetarian,640,34,78,20,3
+Kolkata Biryani (Chicken+Potato) + Raita,lunch,non_vegetarian,620,30,80,20,3
+Chettinad Chicken Curry + Rice,lunch,non_vegetarian,560,36,64,18,4
+Andhra Chicken Curry + Rice + Pickle,lunch,non_vegetarian,570,34,68,18,3
+Mangalorean Fish Gassi + Rice,lunch,non_vegetarian,540,30,66,18,3
+Kashmiri Rista + Rice + Salad,lunch,non_vegetarian,600,32,70,22,3
+Bengali Kosha Mangsho + Rice + Salad,lunch,non_vegetarian,640,34,68,26,3
+Malabar Chicken Curry + Appam (2),lunch,non_vegetarian,560,32,58,22,2
+Rajasthani Laal Maas + 2 Bajra Roti,lunch,non_vegetarian,600,34,46,30,4
+Chicken Fried Rice + Chilli Chicken,lunch,non_vegetarian,620,28,78,22,3
+Chicken Noodles + Manchurian Gravy,lunch,non_vegetarian,580,24,74,20,3
+Chicken Kathi Roll (2) + Chutney,lunch,non_vegetarian,520,30,52,22,3
+Fish Thali (Fish Curry+Rice+Dal+Sabzi+Papad),lunch,non_vegetarian,580,32,72,18,5
+Chicken Thali (Curry+Rice+Dal+Sabzi+Roti),lunch,non_vegetarian,620,36,70,20,5
+Prawn Curry + Coconut Rice,lunch,non_vegetarian,560,28,72,18,3
+Surmai Fry + Sol Kadi + Rice,lunch,non_vegetarian,540,34,60,18,3
+Chicken Stew + Idiappam (3),lunch,non_vegetarian,480,30,56,14,3
+Mutton Paya + 2 Naan,lunch,non_vegetarian,660,36,56,32,2
+Chicken Reshmi Kebab + Green Salad + Naan,lunch,non_vegetarian,540,38,46,22,4
+Duck Curry + Rice (Assamese Style),lunch,non_vegetarian,580,32,66,22,3
+Pork Vindaloo + Rice (Goan),lunch,non_vegetarian,620,34,62,26,3
+Chicken Xacuti + Rice (Goan),lunch,non_vegetarian,580,34,64,22,3
+Mixed Nuts & Seeds (Almonds+Walnuts+Pumpkin 35g),snacks,vegetarian,200,7,8,17,3
+Roasted Chana (50g),snacks,vegetarian,190,10,30,4,6
+Roasted Makhana (Fox Nuts 40g),snacks,vegetarian,150,5,26,2,2
+Sprouts Chaat + Lemon,snacks,vegetarian,170,12,24,3,6
+Paneer Tikka (6 cubes),snacks,vegetarian,250,20,6,18,1
+Fresh Fruit Bowl (Apple+Banana+Papaya),snacks,vegetarian,160,2,40,1,4
+Peanut Butter Toast (1 slice Multigrain),snacks,vegetarian,220,9,22,12,3
+Banana Smoothie (Milk+Banana+Honey),snacks,vegetarian,250,8,45,5,2
+Dhokla (4 pcs) + Green Chutney,snacks,vegetarian,180,7,28,4,2
+Sweet Potato (Boiled 200g) + Chaat Masala,snacks,vegetarian,180,3,42,0,4
+Hummus + Carrot & Cucumber Sticks,snacks,vegetarian,170,7,18,8,5
+Energy Bar (Dates+Nuts+Seeds),snacks,vegetarian,210,6,32,8,3
+Trail Mix (Nuts+Raisins+Coconut 40g),snacks,vegetarian,210,5,22,12,3
+Mango Lassi (1 Glass),snacks,vegetarian,220,6,38,5,1
+Buttermilk (Chaas) + Roasted Peanuts (30g),snacks,vegetarian,200,9,14,12,2
+Masala Corn (Boiled) + Butter,snacks,vegetarian,190,5,32,6,4
+Samosa (2 pcs),snacks,vegetarian,300,6,34,16,2
+Kachori (2 pcs) + Chutney,snacks,vegetarian,320,8,38,16,3
+Bhel Puri (1 plate),snacks,vegetarian,220,6,36,6,3
+Sev Puri (6 pcs),snacks,vegetarian,250,5,32,12,2
+Pani Puri (8 pcs),snacks,vegetarian,200,4,36,5,2
+Dahi Puri (6 pcs),snacks,vegetarian,240,6,34,9,2
+Ragda Pattice (1 plate),snacks,vegetarian,280,8,40,10,4
+Aloo Tikki (2 pcs) + Chutney,snacks,vegetarian,260,5,36,11,3
+Bread Pakora (2 pcs) + Chutney,snacks,vegetarian,280,7,30,14,2
+Palak Pakora (6 pcs),snacks,vegetarian,200,5,22,10,3
+Onion Bhaji / Kanda Bhaji (4 pcs),snacks,vegetarian,230,4,26,12,2
+Moong Dal Pakora (6 pcs),snacks,vegetarian,220,8,24,10,3
+Corn Chaat + Lime,snacks,vegetarian,160,4,30,4,4
+Fruit Chaat (Mixed) + Chaat Masala,snacks,vegetarian,150,2,36,1,4
+Coconut Water (1 tender coconut),snacks,vegetarian,60,1,12,1,1
+Sugarcane Juice (1 glass),snacks,vegetarian,180,1,44,0,0
+Roasted Peanuts + Jaggery (Gajak 40g),snacks,vegetarian,200,7,24,10,2
+Murmura (Puffed Rice) Chivda (50g),snacks,vegetarian,190,4,32,6,2
+Sabudana Vada (2 pcs) + Chutney,snacks,vegetarian,240,4,36,10,1
+Mathri (4 pcs),snacks,vegetarian,220,4,26,12,1
+Khakhra (3 pcs) + Pickle,snacks,vegetarian,180,5,30,5,2
+Masala Papad (2 pcs),snacks,vegetarian,120,5,14,5,2
+Sprouts Salad + Pomegranate,snacks,vegetarian,160,10,24,2,6
+Green Smoothie (Spinach+Banana+Milk),snacks,vegetarian,180,7,32,3,3
+Sattu Drink (Lemon Sattu 1 glass),snacks,vegetarian,160,10,26,2,3
+Dry Fruit Laddu (2 pcs),snacks,vegetarian,240,6,28,12,2
+Til Laddu (Sesame 2 pcs),snacks,vegetarian,220,5,22,14,2
+Chana Jor Garam (50g),snacks,vegetarian,180,10,28,4,5
+Roasted Foxnut Makhana (Masala 40g),snacks,vegetarian,160,5,28,3,2
+Banana Chips (40g Kerala Style),snacks,vegetarian,210,1,26,12,2
+Ragi Cookies (3 pcs),snacks,vegetarian,170,4,26,6,3
+Oats Chilla + Green Chutney,snacks,vegetarian,180,8,26,5,4
+Paneer Sandwich (Grilled),snacks,vegetarian,280,16,28,12,3
+Veg Cutlet (2 pcs) + Ketchup,snacks,vegetarian,220,6,28,9,3
+Poha Cutlet (2 pcs),snacks,vegetarian,200,5,30,7,2
+Dates + Almonds (5 each),snacks,vegetarian,190,5,30,7,3
+Rajgira Chikki (2 pcs),snacks,vegetarian,200,5,30,8,2
+Kurmura Bhel (Jhal Muri),snacks,vegetarian,200,5,34,6,2
+Cucumber Raita Bowl (1 bowl),snacks,vegetarian,100,4,10,4,1
+Boiled Eggs (2),snacks,non_vegetarian,140,12,1,10,0
+Chicken Seekh Kebab (2 pcs),snacks,non_vegetarian,200,20,6,11,1
+Chicken Tikka (4 pcs),snacks,non_vegetarian,220,28,4,10,1
+Grilled Chicken Strips (100g),snacks,non_vegetarian,165,31,0,4,0
+Chicken Salad Cup,snacks,non_vegetarian,200,22,8,10,2
+Egg Sandwich (1 egg + bread),snacks,non_vegetarian,250,14,28,10,2
+Whey Protein Shake (1 scoop + milk),snacks,non_vegetarian,160,28,10,3,0
+Chicken Momos (Steamed 6 pcs),snacks,non_vegetarian,240,18,28,8,1
+Chicken Momos (Fried 6 pcs),snacks,non_vegetarian,320,18,30,16,1
+Egg Bhurji Roll (1 pc),snacks,non_vegetarian,280,14,30,12,2
+Fish Finger (4 pcs) + Tartar Sauce,snacks,non_vegetarian,260,16,22,12,1
+Chicken Pakora (6 pcs),snacks,non_vegetarian,280,20,18,16,1
+Mutton Shammi Kebab (2 pcs),snacks,non_vegetarian,240,18,10,14,1
+Tandoori Fish Tikka (4 pcs),snacks,non_vegetarian,200,28,4,8,1
+Prawn Fry (6 pcs),snacks,non_vegetarian,220,20,12,10,1
+Chicken Cutlet (2 pcs),snacks,non_vegetarian,260,18,22,12,1
+Chicken Spring Roll (2 pcs),snacks,non_vegetarian,280,14,30,12,1
+Tuna Sandwich (Half),snacks,non_vegetarian,230,20,22,7,2
+Egg Puff (Bakery Style 1 pc),snacks,non_vegetarian,280,10,26,16,1
+Chicken Puff (1 pc),snacks,non_vegetarian,300,14,28,16,1
+Chicken Lollipop (4 pcs),snacks,non_vegetarian,300,22,16,18,1
+Fish Amritsari (3 pcs),snacks,non_vegetarian,280,22,20,14,1
+Chicken 65 (6 pcs),snacks,non_vegetarian,300,24,14,18,1
+Egg Bajji (3 pcs Hyderabadi),snacks,non_vegetarian,270,14,22,14,1
+Protein Bar (Whey-based),snacks,non_vegetarian,210,22,24,8,3
+Sardines on Toast (1 slice),snacks,non_vegetarian,200,16,18,8,1
+Beef Jerky (40g),snacks,non_vegetarian,160,22,6,4,0
+Chicken Frankie (1 pc Mumbai Style),snacks,non_vegetarian,320,20,36,12,2
+Egg Devil (4 pcs),snacks,non_vegetarian,240,16,4,18,0
+Chicken Shawarma (1 Roll),snacks,non_vegetarian,350,24,34,14,2
+Reshmi Kebab (3 pcs),snacks,non_vegetarian,220,26,4,12,1
+Kalmi Kebab (2 pcs Chicken Drumstick),snacks,non_vegetarian,260,24,6,16,0
+Keema Samosa (2 pcs),snacks,non_vegetarian,320,16,30,16,2
+Egg Chaat,snacks,non_vegetarian,200,14,16,10,2
+Chicken Malai Tikka (4 pcs),snacks,non_vegetarian,240,28,4,14,0
+Fish Tikka (4 pcs),snacks,non_vegetarian,190,26,4,8,1
+Boti Kebab (Mutton 3 pcs),snacks,non_vegetarian,220,22,4,14,0
+Prawn Tempura (4 pcs),snacks,non_vegetarian,260,16,24,12,1
+Chicken Wings Tandoori (4 pcs),snacks,non_vegetarian,280,24,4,20,0
+Scrambled Eggs (2) on Toast,snacks,non_vegetarian,280,18,24,14,2
+2 Roti + Dal Fry + Mixed Veg Sabzi,dinner,vegetarian,460,18,62,14,8
+2 Roti + Palak Dal + Salad,dinner,vegetarian,430,20,56,12,9
+Paneer Bhurji + 2 Roti,dinner,vegetarian,500,24,44,26,3
+Dal Palak + 2 Phulka + Raita,dinner,vegetarian,420,18,54,12,8
+Khichdi + Kadhi + Papad,dinner,vegetarian,430,15,62,13,5
+Tofu Curry + Brown Rice + Salad,dinner,vegetarian,440,22,54,14,6
+Moong Dal Tadka + 2 Roti + Bhindi Sabzi,dinner,vegetarian,450,20,58,14,8
+Chana Dal + 2 Bajra Roti + Onion,dinner,vegetarian,420,18,56,12,8
+Lauki Chana Dal + 2 Roti,dinner,vegetarian,400,16,56,10,7
+Mixed Veg Curry + 3 Phulka,dinner,vegetarian,480,16,66,16,8
+Matar Mushroom + 2 Roti + Raita,dinner,vegetarian,460,18,54,18,5
+Paneer Tikka (5 pcs) + Green Salad,dinner,vegetarian,380,26,12,26,3
+Baingan Bharta + 2 Bajra Roti,dinner,vegetarian,400,12,54,14,7
+Aloo Palak + 2 Roti + Curd,dinner,vegetarian,440,14,58,16,5
+Soya Chunk Masala + 2 Roti + Salad,dinner,vegetarian,460,28,50,14,6
+Methi Thepla (3) + Dahi + Pickle,dinner,vegetarian,410,14,52,16,5
+Turai Sabzi + Dal + 2 Roti,dinner,vegetarian,400,16,56,10,6
+Gobhi Matar + 2 Roti + Raita,dinner,vegetarian,430,14,56,16,5
+Veg Stew + Appam (2),dinner,vegetarian,380,10,58,12,5
+Sambar + Rice + Poriyal,dinner,vegetarian,440,14,70,10,7
+Rasam + Rice + Papad + Curd,dinner,vegetarian,400,10,66,8,4
+Kootu + Rice + Thoran,dinner,vegetarian,420,14,64,10,7
+Vendakkai (Okra) Sambar + Rice,dinner,vegetarian,430,12,68,10,6
+Dosa (2 Plain) + Sambar + Chutney,dinner,vegetarian,360,10,56,10,4
+Bisibele Bath + Boondi Raita,dinner,vegetarian,460,14,68,14,5
+Vegetable Soup + Multigrain Bread (2),dinner,vegetarian,300,10,44,8,7
+Moong Dal Soup + Veg Sandwich,dinner,vegetarian,340,16,46,10,6
+Mushroom Soup + Garlic Bread (2 pcs),dinner,vegetarian,320,10,38,14,3
+Tomato Soup + Grilled Paneer Sandwich,dinner,vegetarian,360,16,38,16,4
+Mixed Vegetable Clear Soup + Roti (1),dinner,vegetarian,240,8,34,6,5
+Palak Shorba + Multigrain Toast (2),dinner,vegetarian,260,10,36,8,6
+Gujarati Dal + Rice + Rotli + Sabzi,dinner,vegetarian,480,16,70,14,5
+Zunka + 2 Bhakri + Thecha,dinner,vegetarian,400,14,56,12,7
+Bharli Vangi + 2 Jowar Roti,dinner,vegetarian,380,10,52,14,6
+Usal + Pav (2) + Salad,dinner,vegetarian,420,16,56,14,7
+Shukto + Rice + Moong Dal + Bhaja,dinner,vegetarian,460,14,68,14,5
+Labra + Rice + Chutney,dinner,vegetarian,420,12,66,10,6
+Dhokar Dalna + Rice,dinner,vegetarian,440,16,62,14,4
+Grilled Paneer + Stir Fry Veggies + Quinoa,dinner,vegetarian,420,26,40,18,6
+Tofu Stir Fry + Brown Rice,dinner,vegetarian,400,20,50,12,5
+Sprouts Pulao + Raita + Salad,dinner,vegetarian,420,18,58,10,7
+Millet Khichdi + Kadhi + Papad,dinner,vegetarian,400,14,58,10,6
+Quinoa Upma + Sambar + Salad,dinner,vegetarian,380,16,50,10,7
+Daliya Khichdi + Curd + Salad,dinner,vegetarian,370,14,54,8,7
+Jowar Roti (2) + Bharit + Salad,dinner,vegetarian,360,12,50,10,7
+Bajra Roti (2) + Ringna nu Shak + Dahi,dinner,vegetarian,380,10,52,14,6
+Ragi Roti (2) + Palak Sabzi + Dal,dinner,vegetarian,400,16,56,10,8
+Mixed Sprouts Curry + 2 Roti,dinner,vegetarian,420,22,52,12,8
+Stuffed Karela + Dal + 2 Roti,dinner,vegetarian,420,18,56,12,8
+Lauki Kofta + 2 Roti,dinner,vegetarian,440,14,56,18,4
+Cabbage Sabzi + Dal + 2 Roti,dinner,vegetarian,400,16,56,10,6
+Moong Dal Cheela (3) + Curd + Salad,dinner,vegetarian,340,20,40,8,5
+Veg Dalia + Raita + Salad,dinner,vegetarian,350,12,52,8,7
+Masala Oats + Vegetables + Curd,dinner,vegetarian,320,12,46,8,6
+Paneer Steak + Grilled Veggies + Salad,dinner,vegetarian,380,24,18,24,5
+Vegetable Daliya Pulao + Raita,dinner,vegetarian,360,12,56,8,6
+Stuffed Paratha (Mixed Veg 2) + Curd,dinner,vegetarian,440,14,56,18,5
+Hara Bhara Kebab (4 pcs) + Salad + Roti (1),dinner,vegetarian,360,16,42,14,6
+Grilled Chicken Breast (200g) + Steamed Veggies,dinner,non_vegetarian,380,42,12,18,4
+Chicken Tikka (8 pcs) + 2 Roti + Salad,dinner,non_vegetarian,530,42,42,20,4
+Chicken Curry + 2 Roti + Raita,dinner,non_vegetarian,520,34,46,22,3
+Kadhai Chicken + 2 Phulka + Salad,dinner,non_vegetarian,510,36,42,22,4
+Chicken Palak + 2 Roti,dinner,non_vegetarian,480,36,40,20,5
+Chicken Stew + Appam (2),dinner,non_vegetarian,440,30,52,14,3
+Chicken Clear Soup + Grilled Veggies + Rice,dinner,non_vegetarian,360,28,38,10,4
+Butter Chicken + 1 Naan,dinner,non_vegetarian,540,34,38,28,2
+Chicken Handi + 2 Roti,dinner,non_vegetarian,520,34,44,22,3
+Tandoori Chicken (Quarter) + Green Salad,dinner,non_vegetarian,380,40,8,22,3
+Chicken Do Pyaza + 2 Roti + Onion Salad,dinner,non_vegetarian,500,32,46,20,4
+Chicken Malai Curry + Jeera Rice,dinner,non_vegetarian,560,34,62,20,3
+Chicken Pepper Fry + 2 Roti,dinner,non_vegetarian,480,36,40,20,3
+Chettinad Chicken + Rice (Small),dinner,non_vegetarian,500,34,52,18,3
+Grilled Fish (200g) + Steamed Veggies + Salad,dinner,non_vegetarian,360,40,12,16,5
+Fish Curry + Rice + Salad,dinner,non_vegetarian,500,32,60,14,4
+Prawn Stir Fry + Steamed Rice (Small),dinner,non_vegetarian,440,30,50,14,3
+Fish Fry (2 pcs) + Dal + Rice (Small),dinner,non_vegetarian,520,32,56,18,4
+Grilled Salmon + Sweet Potato + Salad,dinner,non_vegetarian,460,38,36,18,5
+Kerala Fish Molee + Appam (2),dinner,non_vegetarian,480,30,50,18,2
+Bengali Fish Curry + Rice (Small),dinner,non_vegetarian,480,28,56,14,3
+Goan Fish Curry + Rice (Small),dinner,non_vegetarian,480,30,54,16,3
+Prawn Masala + 2 Roti,dinner,non_vegetarian,440,28,40,18,3
+Surmai Fry + Green Salad + Roti (1),dinner,non_vegetarian,380,32,26,18,4
+Mutton Keema + 2 Roti + Salad,dinner,non_vegetarian,540,36,42,26,4
+Mutton Curry + 2 Roti + Raita,dinner,non_vegetarian,560,34,44,28,3
+Mutton Rogan Josh + Rice (Small),dinner,non_vegetarian,540,32,52,24,3
+Mutton Korma + 2 Roti,dinner,non_vegetarian,580,34,44,30,2
+Lamb Chops (Grilled 3 pcs) + Salad,dinner,non_vegetarian,420,36,6,28,3
+Egg Curry (2 eggs) + Rice (Small),dinner,non_vegetarian,460,18,60,16,3
+Egg Bhurji + 2 Roti + Salad,dinner,non_vegetarian,420,20,40,20,3
+Egg Fried Rice + Stir Fry Veggies,dinner,non_vegetarian,470,18,60,18,4
+Omelette (2 eggs) + 2 Roti + Salad,dinner,non_vegetarian,400,20,38,18,3
+Egg Masala + Parotta (2),dinner,non_vegetarian,500,18,56,22,2
+Chicken Soup + Brown Bread (2 slices),dinner,non_vegetarian,300,24,30,10,3
+Chicken Clear Soup + Grilled Veggies,dinner,non_vegetarian,260,26,16,10,4
+Fish Soup + Multigrain Bread (1),dinner,non_vegetarian,280,24,28,8,3
+Grilled Chicken Salad Bowl,dinner,non_vegetarian,320,34,16,14,5
+Egg White Omelette (4 whites) + Salad + Roti,dinner,non_vegetarian,280,24,30,6,4
+Baked Chicken Thigh + Salad + Rice (Small),dinner,non_vegetarian,480,34,40,22,3
+Turkey Meatballs + Whole Wheat Pasta,dinner,non_vegetarian,520,36,58,16,5
+Chicken Stir Fry + Noodles,dinner,non_vegetarian,480,28,56,16,3
+Chicken Shawarma Plate + Hummus + Salad,dinner,non_vegetarian,500,34,42,22,4
+Malabar Chicken Curry + Idiappam (3),dinner,non_vegetarian,480,30,54,16,3
+Chicken Rasam + Rice + Salad,dinner,non_vegetarian,420,28,56,10,4
+Andhra Chicken Curry + 2 Roti,dinner,non_vegetarian,500,34,42,22,3
+Bengali Kosha Mangsho + Rice (Small),dinner,non_vegetarian,540,32,54,22,3
+Fish Tikka + Green Salad + Roti (1),dinner,non_vegetarian,340,32,24,14,4
+Pork Vindaloo + Rice (Small) [Goan],dinner,non_vegetarian,520,30,52,22,3
+Chicken Chettinad Dry + Parotta (2),dinner,non_vegetarian,540,32,52,24,2
+Prawn Curry + Appam (2),dinner,non_vegetarian,440,26,52,14,2
+Egg Roast (Kerala) + Porotta (2),dinner,non_vegetarian,500,18,56,22,2
+Duck Roast + Rice (Small) [Kerala],dinner,non_vegetarian,520,30,52,22,3

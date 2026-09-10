@@ -1,0 +1,266 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Track Record — FitLife GYM{% endblock %}
+
+{% block content %}
+<section class="content-section">
+    <div class="container py-5 mt-5">
+
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-white fw-bold">
+                    <i class="bi bi-journal-check
+                              text-warning me-2"></i>
+                    Track Your Workout
+                </h2>
+                <p class="text-muted">
+                    Log every session · Latest appears first
+                </p>
+            </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-calendar-check
+                              text-info fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold">
+                        {{ total_workouts }}
+                    </h3>
+                    <p class="text-muted mb-0">Total Sessions</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-fire
+                              text-danger fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold">
+                        {{ weekly_count }}
+                    </h3>
+                    <p class="text-muted mb-0">This Week</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-clock-history
+                              text-success fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold">
+                        {{ weekly_hours }}h {{ weekly_remaining }}m
+                    </h3>
+                    <p class="text-muted mb-0">Weekly Duration</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-card text-center">
+                    <i class="bi bi-trophy
+                              text-warning fs-1 mb-2"></i>
+                    <h3 class="text-white fw-bold">
+                        {{ favourite_workout|default:"—" }}
+                    </h3>
+                    <p class="text-muted mb-0">Favourite Workout</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Log Form -->
+            <div class="col-lg-5">
+                <div class="dashboard-card">
+                    <h5 class="text-white mb-3">
+                        <i class="bi bi-plus-circle
+                                  text-warning me-2"></i>
+                        New Entry
+                    </h5>
+
+                    {% if messages %}
+                    {% for msg in messages %}
+                    <div class="alert alert-{{ msg.tags }}
+                                alert-dismissible fade show"
+                         role="alert">
+                        {{ msg }}
+                        <button type="button" class="btn-close"
+                                data-bs-dismiss="alert"></button>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        {% for error in form.non_field_errors %}
+                            <p class="mb-0">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <form method="post">
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label class="form-label text-muted">
+                                Date
+                            </label>
+                            {{ form.date }}
+                            {% if form.date.errors %}
+                            <div class="text-danger small mt-1">
+                                {{ form.date.errors }}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label class="form-label text-muted">
+                                    Entry Time
+                                </label>
+                                {{ form.entry_time }}
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label text-muted">
+                                    Exit Time
+                                </label>
+                                {{ form.exit_time }}
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-muted">
+                                Workout Type
+                            </label>
+                            {{ form.workout_type }}
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-muted">
+                                Notes
+                            </label>
+                            {{ form.notes }}
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-warning fw-bold
+                                       w-100 mt-2">
+                            <i class="bi bi-save me-2"></i>
+                            Save Workout
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Log History Table — LATEST FIRST -->
+            <div class="col-lg-7">
+                <div class="dashboard-card">
+                    <div class="d-flex justify-content-between
+                                align-items-center mb-3">
+                        <h5 class="text-white mb-0">
+                            <i class="bi bi-clock-history
+                                      text-info me-2"></i>
+                            Recent Sessions
+                        </h5>
+                        <span class="badge bg-secondary">
+                            Latest First ↓
+                        </span>
+                    </div>
+
+                    {% if logs %}
+                    <div class="table-responsive">
+                        <table class="table table-dark
+                                      table-hover align-middle
+                                      mb-0">
+                            <thead>
+                                <tr class="text-muted small
+                                           text-uppercase">
+                                    <th>#</th>
+                                    <th>Date</th>
+                                    <th>In</th>
+                                    <th>Out</th>
+                                    <th>Duration</th>
+                                    <th>Type</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for log in logs %}
+                                <tr>
+                                    <td>
+                                        <span class="badge bg-dark
+                                                     border border-secondary">
+                                            {{ forloop.counter }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        {{ log.date|date:"d M Y" }}
+                                        {% if forloop.first %}
+                                        <span class="badge bg-warning
+                                                     text-dark ms-1"
+                                              style="font-size:.6rem;">
+                                            LATEST
+                                        </span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {{ log.entry_time|time:"h:i A" }}
+                                    </td>
+                                    <td>
+                                        {{ log.exit_time|time:"h:i A" }}
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-success">
+                                            {{ log.duration_display }}
+                                        </span>
+                                    </td>
+                                    <td class="text-capitalize">
+                                        {{ log.get_workout_type_display }}
+                                    </td>
+                                    <td>
+                                        <form method="post"
+                                              action="{% url 'predictor:delete_workout_log' log.pk %}"
+                                              class="d-inline"
+                                              onsubmit="return confirm(
+                                                  'Delete this entry?'
+                                              );">
+                                            {% csrf_token %}
+                                            <button class="btn btn-sm
+                                                           btn-outline-danger
+                                                           border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+
+                                {% if log.notes %}
+                                <tr>
+                                    <td></td>
+                                    <td colspan="6"
+                                        class="text-muted small
+                                               pt-0 border-0">
+                                        📝 {{ log.notes }}
+                                    </td>
+                                </tr>
+                                {% endif %}
+
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="text-center py-5">
+                        <i class="bi bi-emoji-neutral
+                                  text-muted fs-1"></i>
+                        <p class="text-muted mt-3">
+                            No workouts logged yet.
+                            Start tracking!
+                        </p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

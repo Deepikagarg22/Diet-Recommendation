@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Profile — FitLife GYM{% endblock %}
+
+{% block content %}
+<section class="content-section">
+    <div class="container py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+
+                <!-- Profile Header -->
+                <div class="profile-header text-center mb-4">
+                    <div class="profile-avatar">
+                        <i class="bi bi-person-circle
+                                  display-1 text-warning"></i>
+                    </div>
+                    <h2 class="text-white mt-3 fw-bold">
+                        {{ user.first_name }} {{ user.last_name }}
+                    </h2>
+                    <p class="text-muted">
+                        @{{ user.username }}
+                    </p>
+
+                    {% if profile.is_complete %}
+                    <div class="d-flex justify-content-center
+                                gap-4 mt-3 flex-wrap">
+                        <div class="stat-badge">
+                            <span class="stat-value">
+                                {{ profile.bmi }}
+                            </span>
+                            <span class="stat-label">BMI</span>
+                        </div>
+                        <div class="stat-badge">
+                            <span class="stat-value">
+                                {{ profile.weight_kg }} kg
+                            </span>
+                            <span class="stat-label">Weight</span>
+                        </div>
+                        <div class="stat-badge">
+                            <span class="stat-value">
+                                {{ profile.height_cm }} cm
+                            </span>
+                            <span class="stat-label">Height</span>
+                        </div>
+                        <div class="stat-badge">
+                            <span class="stat-value
+                                        text-capitalize">
+                                {{ profile.bmi_category }}
+                            </span>
+                            <span class="stat-label">Category</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- Edit Form -->
+                <div class="auth-card">
+                    <h4 class="text-warning mb-4">
+                        <i class="bi bi-pencil-square me-2"></i>
+                        Edit Profile
+                    </h4>
+
+                    <form method="POST" novalidate>
+                        {% csrf_token %}
+
+                        <!-- Personal Info -->
+                        <h6 class="text-light mb-3">
+                            Personal Information
+                        </h6>
+                        <hr class="border-secondary">
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    First Name
+                                </label>
+                                {{ user_form.first_name }}
+                                {% if user_form.first_name.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ user_form.first_name.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Last Name
+                                </label>
+                                {{ user_form.last_name }}
+                                {% if user_form.last_name.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ user_form.last_name.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Email
+                                </label>
+                                {{ user_form.email }}
+                                {% if user_form.email.errors %}
+                                    <div class="text-danger small mt-1">
+                                        {{ user_form.email.errors|join:", " }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Body Data -->
+                        <h6 class="text-light mb-3 mt-3">
+                            Body Data
+                        </h6>
+                        <hr class="border-secondary">
+
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label text-light">
+                                    Age
+                                </label>
+                                {{ profile_form.age }}
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label text-light">
+                                    Gender
+                                </label>
+                                {{ profile_form.gender }}
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label text-light">
+                                    Weight (kg)
+                                </label>
+                                {{ profile_form.weight_kg }}
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label text-light">
+                                    Height (cm)
+                                </label>
+                                {{ profile_form.height_cm }}
+                            </div>
+                        </div>
+
+                        <!-- Goals -->
+                        <h6 class="text-light mb-3 mt-3">
+                            Goals & Preferences
+                        </h6>
+                        <hr class="border-secondary">
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Activity Level
+                                </label>
+                                {{ profile_form.activity_level }}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Purpose
+                                </label>
+                                {{ profile_form.purpose }}
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label text-light">
+                                    Diet Preference
+                                </label>
+                                {{ profile_form.diet_preference }}
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-3">
+                            <button type="submit"
+                                    class="btn btn-warning
+                                           fw-bold px-5 py-2">
+                                <i class="bi bi-check-lg me-2"></i>
+                                Save Changes
+                            </button>
+                            <a href="{% url 'predictor:dashboard' %}"
+                               class="btn btn-outline-light px-4 py-2">
+                                Back to Dashboard
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
